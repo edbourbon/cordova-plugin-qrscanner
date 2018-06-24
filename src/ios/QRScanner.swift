@@ -61,15 +61,15 @@ class QRScanner : CDVPlugin, AVCaptureMetadataOutputObjectsDelegate {
     var nextScanningCommand: CDVInvokedUrlCommand?
 
     enum QRScannerError: Int32 {
-        case unexpected_ERROR = 0,
-        camera_ACCESS_DENIED = 1,
-        camera_ACCESS_RESTRICTED = 2,
-        back_CAMERA_UNAVAILABLE = 3,
-        front_CAMERA_UNAVAILABLE = 4,
-        camera_UNAVAILABLE = 5,
-        scan_CANCELED = 6,
-        light_UNAVAILABLE = 7,
-        open_SETTINGS_UNAVAILABLE = 8
+        case UNEXPECTED_ERROR = 0,
+        CAMERA_ACCESS_DENIED = 1,
+        CAMERA_ACCESS_RESTRICTED = 2,
+        BACK_CAMERA_UNAVAILABLE = 3,
+        FRONT_CAMERA_UNAVAILABLE = 4,
+        CAMERA_UNAVAILABLE = 5,
+        SCAN_CANCELED = 6,
+        LIGHT_UNAVAILABLE = 7,
+        OPEN_SETTINGS_UNAVAILABLE = 8
     }
 
     enum CaptureError: Error {
